@@ -12,3 +12,5 @@ I want to make a Jar.<br>
 ![jar4](Image/4.jpg)
 
 And i choose `Top Front` and `Top Rear` for this assignment.
+
+[And here's my results](https://cg2021e.github.io/assignment-1-Raharja214/)
