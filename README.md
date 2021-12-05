@@ -36,4 +36,4 @@ And i choose `Top Front` and `Top Rear` for this assignment.
 9. Set the cube so that it can be moved upward with the W key-button and downward with the S key-button. 
 10. Set the camera to move leftward and rightward linearly (not orbitally) using the A and D key-buttons.
 
-[And here's my results](https://cg2021e.github.io/assignment-1-Raharja214/Assignment 3)
+[And here's my results](https://cg2021e.github.io/assignment-1-Raharja214/)
