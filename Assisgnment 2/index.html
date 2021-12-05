@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <style>
+        div{
+           background-color:rgb(255, 0, 0);
+           border-style: solid;
+           border-width: 1px;
+           max-width: 800px;
+           text-align: center;
+           font-family: 'Arial';
+           padding: 50px;
+           margin: auto;
+       }</style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment-2-Raharja214</title>
+    <title>assignment-3-Raharja214</title>
 </head>
-<style>
-    #Canvas{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-    }
-</style>
 <body onload="main()">
-    <canvas id="myCanvas" width="700" height="700" style=" border: 1px solid rgb(0, 0, 0);">
+    <div id="Div1">
+    <canvas width="600" height="600" id="myCanvas" style="border: 1px solid black;">
+        Your browser does not support WebGL rendering.
     </canvas>
-    <script src="main.js"></script>
     <script src="jarLeft.js"></script>
     <script src="jarRight.js"></script>
     <script src="cubelight.js"></script>
     <script src="gl-matrix-min.js"></script>
+    <script src="main.js"></script> 
+    <p><h2>Assignment 3</h2></p>
+    <p><h3>Raharja Dui Putra Sutedjo</h3></p>
+    <p><h3>05111940000222</h3></p>
+    <p>Press W and S key to move light vertically</p>
+    <p>Press A and D key to move camera horizontally</p>
+</div>
 </body>
-
 </html>
