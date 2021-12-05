@@ -5,13 +5,9 @@ function main() {
 
     // Define vertices data consisting of position and color properties
 
-    var vertices = [
-        ...jar_right,...jar_left,...cubelight,
-    ];
+    var vertices = [...jar_left,...jar_right,...cubelight,];
 
-    var indices = [
-        ...indice_right,...indice_left,...indice_cubelight,
-    ];
+    var indices = [...indice_left,...indice_right,...indice_cubelight,];
 
     // Create a linked-list for storing the vertices data
     var vertexBuffer = gl.createBuffer();
@@ -121,7 +117,7 @@ function main() {
         gl.FLOAT, 
         false, 
         9 * Float32Array.BYTES_PER_ELEMENT, 
-        5 * Float32Array.BYTES_PER_ELEMENT
+        6 * Float32Array.BYTES_PER_ELEMENT
     );
     gl.enableVertexAttribArray(aColor);
     var aNormal = gl.getAttribLocation(shaderProgram, "aNormal");
@@ -131,7 +127,7 @@ function main() {
         gl.FLOAT, 
         false, 
         9 * Float32Array.BYTES_PER_ELEMENT, 
-        6 * Float32Array.BYTES_PER_ELEMENT
+        3 * Float32Array.BYTES_PER_ELEMENT
     );
     gl.enableVertexAttribArray(aNormal);
 
@@ -157,7 +153,7 @@ function main() {
     glMatrix.mat4.lookAt(
         view,
         camera,      // camera position
-        [0, 0, 0],      // the point where camera looks at
+        [0, 2, 0],      // the point where camera looks at
         [0, 1, 0]       // up vector of the camera
     );
     gl.uniformMatrix4fv(uView, false, view);
@@ -244,7 +240,7 @@ function main() {
     function onKeyup(event) {
         if (event.keyCode == 32) freeze = false;
     }
-    document.addEventListener("keydown", onKeydown, false);
+    document.addEventListener("keydown", onKeydown, true);
     document.addEventListener("keyup", onKeyup, false);
 
     function render() {
