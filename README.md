@@ -13,10 +13,18 @@ I want to make a Jar.<br>
 ![jar4](Image/4.jpg)
 
 And i choose `Top Front` and `Top Rear` for this assignment.
-
+# Assignment 2
+1. The application consists of HTML, JavaScript and CSS (optional) files.
+2. The application contains only one Canvas.
+3. The JavaScript application comprises the definition of vertices that embody the shape of the object photographed in the previous assignment: Select two of the four photos.
+4. The definition of vertex includes position (x, y) and color (r, g, b) as represented on the selected photos.
+5. The shape as shown on one of the selected photos is rendered on the left side of the Canvas: Located in the clip space between X = -1.0 and X = 0.0 axes.
+6. The shape as shown in another selected photo is rendered on the right side of the Canvas: Located in the clip space between X = 0.0 and X = 1.0 axes.
+7. The rendering result on the right side of the Canvas is animated vertically, bouncing back between the top and the bottom walls of the Canvas, with a speed of 0.0xxx units, where xxx is the last three digits of the NRP.
+8. Do not forget to commit and push the changes.
 [And here's my results](https://cg2021e.github.io/assignment-1-Raharja214/)
 
-# Assignment 2
+# Assignment 3
 1. Create a 3D definition of the object being photographed in your very first assignment.
 2. Draw the object twice—on the left and on the right half of the canvas—with the two perspectives corresponding to the two photos selected in the previous assignment.
 3. Add a little cube in the center of canvas, right between the two objects.
