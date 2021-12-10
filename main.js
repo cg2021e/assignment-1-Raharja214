@@ -7,7 +7,7 @@ function main() {
     var y_cube = [...cubelight];
     var vertices = [];
 
-    var indices = [...indice_left,...indice_right,...indice_cubelight,...indice_plane];
+    var indices = [...indice_left,...indice_right,...indice_cubelight,...i_plane];
 
     // Create a linked-list for storing the vertices data
     var vertexBuffer = gl.createBuffer();
