@@ -200,6 +200,22 @@ function main() {
 	);
 	gl.uniform3fv(uViewerPosition, camera);
 
+var uLightOnValue = 1.;
+    var uLightOn = gl.getUniformLocation(shaderProgram, "uLightOn");
+
+    function onKeyPressed(event) {
+        if(event.keyCode == 32) {
+            if(uLightOnValue == 1.) {
+                uLightOnValue = 0.;
+            } else if(uLightOnValue == 0.) {
+                uLightOnValue = 1.;
+            }
+            gl.uniform1f(uLightOn, uLightOnValue);
+        }
+    }
+
+    document.addEventListener("keydown", onKeyPressed);
+
     function render() {
         vertices = [...jar_left,...jar_right,...y_cube,...plane];
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
