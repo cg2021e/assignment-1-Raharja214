@@ -7,7 +7,7 @@ function main() {
     var y_cube = [...cubelight];
     var vertices = [];
 
-    var indices = [...indice_left,...indice_right,...indice_cubelight,];
+    var indices = [...indice_left,...indice_right,...indice_cubelight,...indice_plane];
 
     // Create a linked-list for storing the vertices data
     var vertexBuffer = gl.createBuffer();
@@ -201,7 +201,7 @@ function main() {
 	gl.uniform3fv(uViewerPosition, camera);
 
     function render() {
-        vertices = [...jar_left,...jar_right,...y_cube];
+        vertices = [...jar_left,...jar_right,...y_cube,...plane];
         gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 		gl.bufferData(
 			gl.ARRAY_BUFFER,
